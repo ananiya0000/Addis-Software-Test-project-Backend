@@ -36,9 +36,9 @@ module.exports = {
   },
   Removesong: async (req, res, next) => {
     try {
-      const result = req.body;
+      const { _id } = req.body;
       console.log("first");
-      const song = await Songs.findByIdAndDelete(result._id);
+      const song = await Songs.findByIdAndDelete(_id);
       console.log("second");
       res.json({ message: "Song deleted Now", _id: song._id });
 
