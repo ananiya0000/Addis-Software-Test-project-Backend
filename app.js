@@ -9,7 +9,7 @@ const statisticsRoute = require("./routes/statistics.route");
 const cors = require("cors");
 const allowedOrigins = [
   "http://localhost:3001",
-  "https://addissoftawretestprojectfrontendwithoutr.onrender.com/",
+  "https://addissoftawretestprojectfrontendwithoutr.onrender.com",
 ];
 app.use(
   cors({
