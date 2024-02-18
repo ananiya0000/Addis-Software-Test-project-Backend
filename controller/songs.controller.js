@@ -45,6 +45,7 @@ module.exports = {
       console.log("third");
     } catch (err) {
       console.log("fourth");
+      clg(err);
       res.status(500).json({ message: err.message });
     }
   },
