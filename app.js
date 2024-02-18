@@ -7,9 +7,13 @@ const PORT = process.env.PORT || 3000;
 const songsRoute = require("./routes/songs.route");
 const statisticsRoute = require("./routes/statistics.route");
 const cors = require("cors");
+const allowedOrigins = [
+  "http://localhost:3001",
+  "https://addissoftawretestprojectfrontendwithoutr.onrender.com/",
+];
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: allowedOrigins,
     credentials: true,
   })
 );
