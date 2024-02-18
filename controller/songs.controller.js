@@ -38,7 +38,7 @@ module.exports = {
     try {
       const result = await req.body;
       const song = await Songs.findByIdAndDelete(result._id);
-      res.json({ message: "Song deleted", id: result._id });
+      res.json({ message: "Song deleted", _id: result._id });
     } catch (err) {
       res.status(500).json({ message: err.message });
     }
