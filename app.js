@@ -10,7 +10,7 @@ const cors = require("cors");
 const allowedOrigins = [
   "http://localhost:3001",
   "https://addissoftawretestprojectfrontendwithoutr.onrender.com",
-  "https://addissoftawretestprojectwithreduxxsaga.onrender.com/",
+  "https://addissoftawretestprojectwithreduxxsaga.onrender.com",
 ];
 app.use(
   cors({
