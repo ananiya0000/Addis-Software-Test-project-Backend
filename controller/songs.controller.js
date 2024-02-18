@@ -37,15 +37,9 @@ module.exports = {
   Removesong: async (req, res, next) => {
     try {
       const { _id } = req.body;
-      console.log("first");
       const song = await Songs.findByIdAndDelete(_id);
-      console.log("second");
       res.json({ message: "Song deleted Now", _id: _id });
-
-      console.log("third");
     } catch (err) {
-      console.log("fourth");
-      console.log(err);
       res.status(500).json({ message: err.message });
     }
   },
