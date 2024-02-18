@@ -40,7 +40,7 @@ module.exports = {
       console.log("first");
       const song = await Songs.findByIdAndDelete(_id);
       console.log("second");
-      res.json({ message: "Song deleted Now", _id: song._id });
+      res.json({ message: "Song deleted Now", _id: _id });
 
       console.log("third");
     } catch (err) {
